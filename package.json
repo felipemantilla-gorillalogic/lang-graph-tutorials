@@ -1,0 +1,31 @@
+{
+  "name": "lang-graph-poc",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:1": "npx ts-node 1.first_agent.ts",
+    "start:2": "npx ts-node -r dotenv/config 2.quick_start.ts",
+    "start:3": "npx ts-node -r dotenv/config 3.quick_start_2.ts",
+    "start:3:debug": "node --inspect -r ts-node/register -r dotenv/config 3.quick_start_2.ts",
+    "start:3:refactored": "npx ts-node -r dotenv/config 3.quick_start_2_refactored.ts",
+    "start:4": "npx ts-node -r dotenv/config 4.chat_bot.ts",
+    "start:5": "npx ts-node -r dotenv/config 5.human-feedback.ts",
+    "start:6": "npx ts-node -r dotenv/config 6.re-act-agent.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/anthropic": "^0.2.15",
+    "@langchain/community": "^0.2.31",
+    "@langchain/core": "^0.2.31",
+    "@langchain/langgraph": "^0.2.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
